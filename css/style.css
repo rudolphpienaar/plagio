@@ -3,7 +3,24 @@
 	margin: 0px;
 	padding: 0px;
 }
-body {background-color:#ffffff;font-family: 'Open Sans', sans-serif; font-size:12px;}
+body {
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F0FCFF), to(#6BAFFC));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #F0FCFF, #6BAFFC);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #F0FCFF, #6BAFFC);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #F0FCFF, #6BAFFC);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #F0FCFF, #6BAFFC);
+
+
+font-family: 'Open Sans', sans-serif; font-size:12px;}
 
 p { font-family: Arial, "MS Trebuchet", sans-serif;
 	font-size: 10pt;
@@ -26,7 +43,7 @@ a {color:#000000;}
 a:visited,active {color:#666666;}
 .hide {display:none;}
 /*Header*/
-#topbar {background-color: #353535;}
+#topbar {background-color: #6BAFFC;}
 #topbar #TopSection {width:882px; margin:auto; height: 43px;}
 #topbarnav .topnavitems {float:right; display:block;}
 #wrap #header {}
@@ -45,36 +62,40 @@ background-color: #FFF; opacity:0.5;}
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active {display:block; text-decoration:none; color:#ffffff; float:left; padding:10px;color: #353535;
 background-color: #FFF;}
 /* Contents */
-#contents {font-size:11px;height:100%}
+    float:rightdd;
+#contents {font-size:11px;height:100%;}
 #contents a:hover {text-decoration:none;}
 #contents p {color:#666666; line-height:22px;}
-#contents h2 {color:#353535; font-weight:normal;}
+#contents h2 {color:#353535; font-weight:normal;border-bottom: 1px solid #353535;}
+#contents h2.introtext {border-bottom: none;}
 
-#left { width:882px; float:left; padding:5px 20px 5px 5px; border: 1px solid #353535;background-color: #ECECEC;margin-top: 10px;}
+#left { position:relative; width:882px; float:left; padding:5px 20px 5px 5px; border: 1px solid #353535;background-color: #FFF;margin-top: 10px;}
 #left h3, #left h4, #left h5 { color:#009999; display:block; padding:5px; margin-bottom:10px; margin-top:10px;}
 #left h3 {font-size:20px; font-family: 'Open Sans', sans-serif; font-weight:normal;}
 #left h4 {font-size:18px; font-family: 'Open Sans', sans-serif; font-weight:normal;}
 #left h5 {font-size:14px; font-family: 'Open Sans', sans-serif; font-weight:normal;}
 
-#left h2 {font-size:26px; display:block; border-bottom:solid 1px #353535; padding:5px;}
+#left h2 {font-size:26px; display:block; padding:5px;}
 #left h2 a, #left h2 a:visited, #left h2 a:active{color:#353535; text-decoration:none;}
 #left h2 a:hover {color:#000000;}
 blockquote {display:block; border-top:dashed 1px #D2B87B;  border-bottom:dashed 1px #D2B87B;text-align:center; margin:10px; padding:10px;}
 blockquote p {font-size:12px; }
-#left img {background:#FFFFFF; border:solid 1px #cccccc; padding:3px; margin:5px;}
+#left img {}
 #left .alignleft {float:left;}
 #left .alignright {float:right;}
 
+#left ol {padding-left:20px;}
+#left ol li {padding:3px;}
 #left ul {padding:10px; color:#666666;}
 #left ul li {padding:3px; display:block; border-bottom:dashed 1px #099;}
 #left ul li a {color: #099;}
 #left p {margin:10px 0px 10px 0px;}
 
-#credit {background:#353535;text-align:center; color:#999999; font-family: 'Open Sans', sans-serif; font-size:10px;}
+#credit {background:#6BAFFC;text-align:center; color:#353535; font-family: 'Open Sans', sans-serif; font-size:10px;}
 #creditText{
   padding:10px; 
 }
-#credit a,#footer a:visited, #footer a:active, #footer a:hover {color:#999999;}
+#credit a,#footer a:visited, #footer a:active, #footer a:hover {color:#0078FF;}
 
 
 .imageT { 
@@ -83,21 +104,22 @@ blockquote p {font-size:12px; }
 }
 
 .greetings {
+    position: absolute;
     background-color: #FFF;
-opacity: 0.9;
-    width:50%;
+    opacity: 0.9;
+    width:75%;
     float:left;
 }
 
 .greetingsP {
+    position:absolute;
+    top:95%;
     background-color: #353535;
-opacity: 0.95;
-    width:50%;
-    float:right;
-color: #FFF;
-font-size: large;
-text-align: justify;
-line-height: normal;
+    opacity: 0.95;
+    color: #FFF;
+    font-size: large;
+    text-align: justify;
+    line-height: normal;
 }
 
 .greetingsPC {
@@ -171,4 +193,22 @@ padding:10px;
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
   position: relative;
   z-index: 3;
+}
+
+.navwrap{
+  display: inline-block;
+  margin-bottom:10px;
+}
+.nav{
+  border-right: solid 1px #FFF;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #6BAFFC;
+  padding: 5px 10px;
+  margin-right: -3px;
+}
+
+.nav.active {
+  background-color: #0078FF;
+  color:#FFF;
 }

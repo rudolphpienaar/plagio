@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Head Injury Study</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src='js/misc.js'></script>
+</head>
+
+<body>
+
+<div id="topbar">
+	<div id="TopSection">
+		<ul id="topmenu">
+			<li><a href="index.php">home</a></li>
+			<li><a href="ourStudy.php">our study</a></li>
+			<li><a href="whoWeAre.php">who we are</a></li>
+			<li><a href="preparingForYourStudyVisit.php">preparing your visit</a></li>
+			<li class="active"><a href="whatToExpectDuringYourStudyVisit.php">what to expect</a></li>
+			<li><a href="contactUs.php">contact us</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="wrap">
+  <div id="contents">
+    <div id="left" style='height:100%; overflow-y:auto;'>
+
+    <div id="whatnav" class="navwrap">
+   <div id="whatwillhappennav" class="nav active" onclick="showdiv('whatwillhappen')">what will happen</div>
+   <div id="considerationsnav" class="nav" onclick="showdiv('considerations')">important considerations</div>
+</div>
+
+    <div id="whatwillhappen">
+    	<h2><a href="#">what will happen... </a></h2>
+        <p>
+In the past MRI exams required that infants be sedated or anesthetized to prevent head motion that could interfere with obtaining the brain image. At Boston Children’s Hospital, we have developed a protocol to carry out MRI exams with infants without using sedation or anesthesia, increasing the safety and efficiency of the procedure.
+        </p>
+        <p>
+Using the established protocol, a private nursery room is set up to allow your child to be fed and fall asleep naturally. Also headphones are provided for ear protection for your child during the study.
+        </p>
+        <p>
+On the day you are scheduled for your appointment, we ask that you dress your child in clothing that does not contain any metal (such as snaps, zippers, belt or shoe buckles, hair clips, jewelry or earrings). We will check to make sure that you and your child are metal-free with a metal detector.  MRI uses a strong magnet, so metal objects are not allowed inside the MRI room. You will need to inspect your child’s clothing for small pieces of metal.  If you forget and your child arrives with clothing that contains metal, a metal free hospital gown will be provided. 
+        </p>
+        <p>
+If you plan to stay inside the room with your child, we ask that you also bring or wear metal-free clothing. For a list of metal objects that cannot be present near an MRI machine, please visit the “Preparing for your Study Visit” page.
+        </p>
+        <p>
+Once your child is asleep, he or she will be brought into the MRI room. They will be placed in the machine facing upwards and will remain in this position until the MRI is complete. The MRI procedure typically lasts approximately 20 minutes. After your child has completed his/her MRI, you will be ready to go home.
+        </p>
+
+    </div>
+
+    <div id="considerations" style="display:none">
+    	<h2><a href="#">important considerations... </a></h2>
+        <p>
+Because this is a research study, you will not be notified of the results of tests and procedures your infant undergoes.  However if the study team uncovers a unexpected finding that places your infant’s health and welfare at risk, you will be informed of these findings by one of the study investigators caring for your infant.   Should the MRI show unexpected medical concerns (ex: brain tumor), an investigator will contact you to inform you of the findings approximately 2 days after the successful MRI procedure.  The investigators will also share this information with your child’s clinical team so they can care for your child. This 2 day turn around time is in place to allow investigators enough time to read the MRI and seek a second opinion/confirmation from other qualified clinicians.  Only incidental findings that put your infant’s health or welfare at risk will be reported to you. 
+        </p>
+        <p>
+In addition, it is important to know that your child must remain very still during the MRI for it to be successful. Because we will not be sedating your child, there is a possibility that he or she could wake up and move around, affecting the success of the procedure. If this occurs, the study team will be able to schedule you for a second MRI attempt.
+        </p>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+showdiv = function(id){
+
+document.getElementById('considerations').style.display = 'none';
+document.getElementById('whatwillhappen').style.display = 'none';
+document.getElementById('considerationsnav').classList.remove('active');
+document.getElementById('whatwillhappennav').classList.remove('active');
+
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'nav').classList.add('active')
+}
+</script>
+
+${FOOTER}
+
+</body>
+</html>

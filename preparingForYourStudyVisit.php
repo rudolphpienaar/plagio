@@ -1,6 +1,6 @@
 <?php
 
-$content = file_get_contents("templates/aboutThisStudy.html");
+$content = file_get_contents("templates/preparingForYourStudyVisit.html");
 
 // add footer
 $content = str_replace('${FOOTER}', file_get_contents("templates/footer.html"), $content);

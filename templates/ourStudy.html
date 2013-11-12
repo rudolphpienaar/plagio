@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Head Injury Study</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src='js/misc.js'></script>
+</head>
+
+<body>
+
+<div id="topbar">
+	<div id="TopSection">
+		<ul id="topmenu">
+			<li><a href="index.php">home</a></li>
+			<li class="active"><a href="ourStudy.php">our study</a></li>
+			<li><a href="whoWeAre.php">who we are</a></li>
+			<li><a href="preparingForYourStudyVisit.php">preparing your visit</a></li>
+			<li><a href="whatToExpectDuringYourStudyVisit.php">what to expect</a></li>
+			<li><a href="contactUs.php">contact us</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="wrap">
+  <div id="contents">
+    <div id="left">
+    <div id="ourstudynav" class="navwrap">
+   <div id="aboutthisstudynav" class="nav active" onclick="showdiv('aboutthisstudy')">about the study</div>
+   <div id="whocanparticipatenav" class="nav" onclick="showdiv('whocanparticipate')">who can participate</div>
+   <div id="whatwillidonav" class="nav" onclick="showdiv('whatwillido')">what will I do</div>
+</div>
+    <div id="aboutthisstudy">
+    <h2><a href="#">about this study... </a></h2>
+    <p>
+This study will be conducted at Boston Children’s Hospital and Children’s Hospital Waltham.
+	</p>
+    <p>
+This study will enable investigators to find out if brain structure and characteristics are affected by the shape of the infant’s head, and if changes in the brain occur with helmet therapy.  
+	</p>
+    <p>
+Some researchers and healthcare providers are concerned that abnormal head shape, known as deformational plagiocephaly, is associated with developmental problems such as learning, motor function, and vision problems. Advances in technology may be able to detect changes to the brain resulting from an abnormal head shape that may be associated with developmental problems, but this has never been studied. You are being asked if you would like to have your infant participate in this study because your infant has an abnormal head shape that requires helmet therapy. If you choose to have your infant participate in this study, your infant will have a brain MRI done before and after helmet therapy to correct the head shape abnormality.  These studies are being done to see if changes in brain structure and characteristics are present in patients with abnormal head shapes before and after correction of the abnormality with a helmet.
+	</p>
+    <p>
+Additionally this study will also help to determine the need for a larger investigation to further establish the association between abnormal head shape and developmental delay.
+	</p>
+</div>
+
+<div id="whocanparticipate" style="display:none;">
+    <h2><a href="#">who can participate... </a></h2>
+<p>
+The investigators plan to enroll 10-15 infants for this study.
+</p>
+<p>
+Your infant is eligible for this study if he/she:
+<ol>
+<li>Has an abnormal head shape</li>
+<li>Requires helmet therapy according to your infant’s doctor</li>
+<li>Was born at 37 weeks or greater</li>
+<li>Is less than or equal to 6 months of age</li>
+<li>Has no major health problem such as birth injury, genetic disorder, intracranial hemorrhage, hydrocephalus, or neurologic abnormality.</li>
+</ol>
+</p>
+<p>
+**Also to qualify for this study, your infant must not have a history of implantable metal device or internal/external orthotic device. This is because metal devices cannot be used around Magnetic Resonance Imaging machines (MRI) for safety reasons.  If you do not know what these things are, please ask the study team.
+</p>
+</div>
+<div id="whatwillido" style="display:none;">
+<h2><a href="#">what will I do if I join the study... </a></h2>
+<p>
+As part of your infant’s routine helmet therapy treatment for abnormal head shape, your infant will be sent to the NOPCO brace center at Boston Children’s Hospital for head shape measures including a laser scan of their head. 
+</p>
+<p>
+Your infant will also have cerebral tissue oxygenation monitoring completed while waiting for the head shape measures to be obtained or following the measures. 
+</p>
+<p>
+Next, arrangements will be made for you to bring your infant to Children’s Hospital Waltham at a later date, and at a time convenient to you (during normal business hours) for a non-sedated brain MRI. A study staff member will be available on the day of the testing and will remain with you and your infant throughout the brain MRI.  
+</p>
+<p>
+You will receive instructions on preparation for their day of testing and what to expect when you arrive. 
+</p>
+<p>
+After all initial measures including head shape measures, laser scan, cerebral tissue oxygenation monitoring and Brain MRI are obtained, your infant will begin treatment with his or her helmet.  
+</p>
+<p>
+During this time, your infant will receive routine care and management for correction of the abnormal head shape, including routine visits with your Neurosurgeon or Plastic Surgery physician, and routine readjustments of the helmet at NOPCO.  
+</p>
+<p>
+Upon resolution of the abnormal head shape, head shape measures that include a laser scan of your infant’s head will be obtained.
+</p>
+<p>
+Also cerebral tissue oxygenation monitoring will be completed before or after the head shape measures are obtained. 
+</p>
+<p>
+Finally, arrangements will be made for a repeat non-sedated brain MRI. Once again this visit will occur during normal business hours, at a time convenient to you. A study staff member will be available on the day of the testing and will remain with you and your infant throughout the brain MRI.
+</p>
+<p>
+Participation in this study ends when the repeat non-sedated MRI is obtained.
+</p>
+</div>
+    </div>
+  </div>
+</div>
+<script>
+showdiv = function(id){
+
+document.getElementById('whocanparticipate').style.display = 'none';
+document.getElementById('whatwillido').style.display = 'none';
+document.getElementById('aboutthisstudy').style.display = 'none';
+document.getElementById('whocanparticipatenav').classList.remove('active');
+document.getElementById('whatwillidonav').classList.remove('active');
+document.getElementById('aboutthisstudynav').classList.remove('active');
+
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'nav').classList.add('active')
+}
+
+
+</script>
+
+${FOOTER}
+
+</body>
+</html>

@@ -1,8 +1,10 @@
 <?php
-$content = file_get_contents("templates/moreAboutConcussion.html");
+
+$content = file_get_contents("templates/ourStudy.html");
 
 // add footer
 $content = str_replace('${FOOTER}', file_get_contents("templates/footer.html"), $content);
 
 echo $content;
+
 ?>
