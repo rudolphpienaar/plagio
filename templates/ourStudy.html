@@ -23,14 +23,15 @@
 </div>
 
 <div id="wrap">
-  <div id="contents">
-    <div id="left">
+  <div id="contents" style="height:100%">
+    <div id="left" style="height:100%; overflow-y:auto;">
     <div id="ourstudynav" class="navwrap">
    <div id="aboutthisstudynav" class="nav active" onclick="showdiv('aboutthisstudy')">about the study</div>
    <div id="whocanparticipatenav" class="nav" onclick="showdiv('whocanparticipate')">who can participate</div>
    <div id="whatwillidonav" class="nav" onclick="showdiv('whatwillido')">what will I do</div>
 </div>
     <div id="aboutthisstudy">
+    <div class="fixednav"></div>
     <h2><a href="#">about this study... </a></h2>
     <p>
 This study will be conducted at Boston Children’s Hospital and Children’s Hospital Waltham.
@@ -46,7 +47,8 @@ Additionally this study will also help to determine the need for a larger invest
 	</p>
 </div>
 
-<div id="whocanparticipate" style="display:none;">
+<div id="whocanparticipate">
+    <div class="fixednav"></div>
     <h2><a href="#">who can participate... </a></h2>
 <p>
 The investigators plan to enroll 10-15 infants for this study.
@@ -65,7 +67,8 @@ Your infant is eligible for this study if he/she:
 **Also to qualify for this study, your infant must not have a history of implantable metal device or internal/external orthotic device. This is because metal devices cannot be used around Magnetic Resonance Imaging machines (MRI) for safety reasons.  If you do not know what these things are, please ask the study team.
 </p>
 </div>
-<div id="whatwillido" style="display:none;">
+<div id="whatwillido">
+    <div class="fixednav"></div>
 <h2><a href="#">what will I do if I join the study... </a></h2>
 <p>
 As part of your infant’s routine helmet therapy treatment for abnormal head shape, your infant will be sent to the NOPCO brace center at Boston Children’s Hospital for head shape measures including a laser scan of their head. 
@@ -104,14 +107,12 @@ Participation in this study ends when the repeat non-sedated MRI is obtained.
 <script>
 showdiv = function(id){
 
-document.getElementById('whocanparticipate').style.display = 'none';
-document.getElementById('whatwillido').style.display = 'none';
-document.getElementById('aboutthisstudy').style.display = 'none';
 document.getElementById('whocanparticipatenav').classList.remove('active');
 document.getElementById('whatwillidonav').classList.remove('active');
 document.getElementById('aboutthisstudynav').classList.remove('active');
 
-document.getElementById(id).style.display = 'block';
+var element = document.getElementById(id);
+element.scrollIntoView();
 document.getElementById(id+'nav').classList.add('active')
 }
 

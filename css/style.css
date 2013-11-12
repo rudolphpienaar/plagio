@@ -112,8 +112,8 @@ blockquote p {font-size:12px; }
 }
 
 .greetingsP {
-    position:absolute;
-    top:95%;
+    margin-top:-1px;
+    float:left;
     background-color: #353535;
     opacity: 0.95;
     color: #FFF;
@@ -196,6 +196,8 @@ padding:10px;
 }
 
 .navwrap{
+  position:fixed;
+  background-color: #F0FCFF;
   display: inline-block;
   margin-bottom:10px;
 }
@@ -211,4 +213,8 @@ padding:10px;
 .nav.active {
   background-color: #0078FF;
   color:#FFF;
+}
+
+.fixednav {
+  min-height: 30px;
 }
