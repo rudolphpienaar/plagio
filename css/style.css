@@ -23,7 +23,7 @@ body {
 font-family: 'Open Sans', sans-serif; font-size:12px;}
 
 p { font-family: Arial, "MS Trebuchet", sans-serif;
-	font-size: 10pt;
+	font-size: 12pt;
 	}
 
 img.floatLeft { 
@@ -65,7 +65,7 @@ background-color: #FFF;}
     float:rightdd;
 #contents {font-size:11px;height:100%;}
 #contents a:hover {text-decoration:none;}
-#contents p {color:#666666; line-height:22px;}
+#contents p {color:#353535; line-height:22px;}
 #contents h2 {color:#353535; font-weight:normal;border-bottom: 1px solid #353535;}
 #contents h2.introtext {border-bottom: none;}
 
@@ -85,7 +85,7 @@ blockquote p {font-size:12px; }
 #left .alignright {float:right;}
 
 #left ol {padding-left:20px; color: #666}
-#left ol li {padding:3px;}
+#left ol li {padding:3px;font-size: 16px;color:#353535;font-family: Arial, "MS Trebuchet", sans-serif;}
 #left ul {padding:10px; color:#666666;}
 #left ul li {padding:3px; display:block; border-bottom:dashed 1px #099;}
 #left ul li a {color: #099;}
@@ -149,8 +149,8 @@ padding:10px;
 
 .person img {
   display: block;
-  width: 90px;
-  height: 115px;
+  width: 100px;
+  height: 128px;
   margin-bottom: 8px;
 }
 
